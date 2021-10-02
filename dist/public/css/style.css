@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+:root {
+    --main-color: #7fbac2;
+    --color-dark: #a7629d;
+    --text-grey: #5a5f66;
+	--bg-color: #5f6468;
+	--text-blue: #df9321;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+	background: var(--bg-color);
+}
+
+a, a:hover, a:focus {
+	color: inherit;
+	text-decoration: none;
+	transition: all 0.3s;
+	border-radius: 30px 0px 0px 30px;
+}
+
+header {
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    width: 100%;
+}
+
+.menu_cliente {
+    display: flex;
+    justify-content: space-between;
+	background: #fff;
+}
+
+.info_cliente {
+	float: left;
+}
+
+.cliente_conta img {
+    border-radius: 50%;
+	border: 2px solid var(--color-dark);
+    margin-right: 1rem;
+	float: left;
+	display: flex;
+	align-items: center;
+}
+
+#sidebarCollapse {
+	background: inherit;
+	color: var(--color-dark);
+	border: none;
+}
+
+
+/* *******************Menu Lateral******* */
+
+#sidebar.active {
+    margin-left: -345px;
+}
+
+.wrapper {
+	display: flex;
+	text-decoration: none;
+	transition: all 0.3s;
+}
+
+#sidebar {
+	min-width: 345px;
+	max-width: 345px;
+	background: var(--main-color);
+	color: #fff;
+	transition: all 0.3s;
+}
+
+.sidebar-header {
+	padding: 20px;
+	background: var(--main-color);
+}
+
+.sidebar-header img {
+	width: 70%;
+}
+
+#sidebar ul li a {
+	padding: 20px;
+	margin-left: 40px;
+	font-size: 1.1em;
+	display: block;
+}
+
+#sidebar ul li a:hover{
+	color: var(--text-grey);
+	background: #fff;
+	border-radius: 30px 0px 0px 30px;
+}
+
+ul ul a {
+	font-size: 0.9em !important;
+	padding-left: 30px !important;
+	background: #d070b4;
+}
+
+#content {
+	width: 100%;
+	/* padding: 20px; */
+	min-height: 100vh;
+	transition: all 0.3s;
+}
+
+.cards {
+	display: flex;
+}
+
+.card_fatura {
+	background: #fff;
+	margin: 20px;
+	padding: 1.5rem;
+	width: 100%;
+}
+
+.card_saldo {
+	background: var(--main-color);
+	margin: 20px;
+	padding: 1.5rem;
+	color: #fff;
+	width: 100%;
+}
+
+@media (max-width: 768px) {
+    #sidebar {
+        margin-left: -345px;
+    }
+    #sidebar.active {
+        margin-left: 0;
+    }
+	.cards {
+		flex-wrap: wrap;
+	}
+}
+
+/* **************** TRANSFERÊNCIAS */
+
+.form_transf {
+	width: 400px;
+	background: var(--main-color);
+	padding: 40px;
+}
+
+.btn_transf {
+	width: 100%;
+	margin-top: 20px;
+}
+
+/* ***************** LOGIN */
+
+#logo {
+	max-width: 45%;
+}
+
+.navbar-brand {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.bg-main-color {
+	background: var(--main-color);
+	max-height: 5rem;
+}
+
+.text-login {
+	color: var(--text-blue);
+	text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+	font-family: "Pragati Narrow", sans-serif;
+}
+
+.boxlogin {
+	max-width: 400px;
+	margin: 0 auto;
+	padding: 20px;
+	background: #fff;
+	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+	border-radius: 4px;
+}
+.btn-login {
+	margin-left: 37%;
+	color: var(--text-blue);
+}
+
+/* ************* CADASTRO */
+
+.form_cadastro {
+	width: 600px;
+	padding: 10px;
+}
+
+
+
+
+
+
+
